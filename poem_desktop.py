@@ -40,5 +40,4 @@ if __name__ == '__main__':
     poem = get_poem()
 
     img_path = absolute_path + '/poem.png'
-    #img_path = '/home/bingyu/Documents/poem_desktop/poem.png'
     create_image(poem, img_path)
