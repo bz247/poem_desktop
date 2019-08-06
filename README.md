@@ -12,5 +12,3 @@ crontab + python to change desktop every day.
 	* Set [poem_desktop.py](poem_desktop.py) to executable with `chmod +x poem_desktop.py`
 	* Open crontab editor `env EDITOR=vim crontab -e`. Insert at the end of the file `0 0 * * * path_to_python path_to_poem_desktop.py`
 	* Use `crontab -l` to view the current job, `mail` to check messages and `crontab -r` to remove the current job.
-
-	/home/bingyu/anaconda3/envs/geo/bin/python /home/bingyu/Documents/poem_desktop/poem_desktop.py 
