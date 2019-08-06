@@ -1,6 +1,6 @@
 ### Ubuntu background: https://gist.github.com/mtrovo/1110370
 ### Create image: Gabor Szabo post on Code Maven
-### Poem on github repo: chinese-poetry/chinese-poetry
+### Poem on github repo: https://github.com/chinese-poetry/chinese-poetry
 
 import urllib.request
 import json
@@ -13,7 +13,7 @@ absolute_path = os.path.dirname(os.path.abspath(__file__))
 def get_poem():
     
     with urllib.request.urlopen("https://raw.githubusercontent.com/bz247/chinese-poetry/master/json/poet.song.{}000.json".format(random.randint(0, 99))) as url:
-        ### Forked from chinese-poetry/chinese-poetry
+        ### Forked from https://github.com/chinese-poetry/chinese-poetry
         data = json.loads(url.read().decode())
         poem = data[random.randint(0, len(data))]
 
