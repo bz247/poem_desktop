@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-PID=$(pgrep -u $LOGNAME gnome-session)
-echo $PID >> /home/bingyu/Desktop/output.txt
+# PID=$(pgrep -u $LOGNAME gnome-session)
+# echo $PID >> /home/bingyu/Desktop/output.txt
 
-export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-)
+# export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-)
 
-/home/bingyu/anaconda3/envs/geo/bin/python /home/bingyu/Documents/poem_desktop/poem_desktop.py 
+/Users/bingyu/anaconda3/envs/cities/bin/python /Users/bingyu/poem_desktop/poem_desktop.py 
 
-gsettings set org.gnome.desktop.background picture-options "centered"
-gsettings set org.gnome.desktop.background picture-uri "file:///home/bingyu/Documents/poem_desktop/poem.png"
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/bingyu/poem_desktop/poem.png"';
+killall Dock;

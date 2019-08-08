@@ -21,7 +21,7 @@ def get_poem():
         
 def create_image(poem, img_path):
     
-    img = Image.new('RGB', (2560, 1440), color=(0, 0, 0))
+    img = Image.new('RGB', (2304, 1440), color=(0, 0, 0))
     d = ImageDraw.Draw(img)
 
     author = poem['author']
