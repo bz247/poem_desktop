@@ -10,7 +10,7 @@ crontab + python to change desktop every day.
 	* Use `crontab -l` to view the current job, `mail` to check messages and `crontab -r` to remove the current job.
 
 3. On mac:
-	* `cp poem_desktop.plist /Library/LaunchDaemon/poem_desktop.plist`
+	* `sudo cp poem_desktop.plist /Library/LaunchDaemons/poem_desktop.plist`
 	* `sudo chmod 600 /Library/LaunchDaemons/poem_desktop.plist`
 	* `sudo chown root /Library/LaunchDaemons/poem_desktop.plist`
 	* `launchctl load /Library/LaunchDaemons/poem_desktop.plist `
