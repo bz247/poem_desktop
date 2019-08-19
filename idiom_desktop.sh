@@ -11,5 +11,5 @@ PID=$(pgrep -u bingyu gnome-session)
 export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-)
 
 /usr/bin/gsettings set org.gnome.desktop.background picture-options "centered"
-/usr/bin/gsettings set org.gnome.desktop.background picture-uri "file:///home/bingyu/Documents/poem_desktop/poem.png"
+/usr/bin/gsettings set org.gnome.desktop.background picture-uri "file:///home/bingyu/Documents/idiom_desktop/poem.png"
 
